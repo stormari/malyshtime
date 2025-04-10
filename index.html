@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>МалышТайм</title>
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('serviceWorker.js');
+        });
+      }
+    </script>
+    <style>
+      body { font-family: sans-serif; margin: 2rem; background: #f0fff4; color: #222; }
+      h1 { font-size: 1.5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>МалышТайм — веб-приложение готово 📱</h1>
+    <p>Открой это на iPhone в Safari → Поделиться → «На экран Домой»</p>
+  </body>
+</html>
